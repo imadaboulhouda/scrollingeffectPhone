@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Slide with css </title>
+    <style>
+        .slides{
+            overflow-x: scroll;
+            overflow-y: hidden;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+        .slides::-webkit-scrollbar
+        {
+            display: none;
+        }
+        .box{
+            background:red;
+            width:100px;
+            height:100px;
+            
+            margin-right: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class='slides'>
+        <div class='box'></div>
+        <div class='box'></div>
+        <div class='box'></div>
+        <div class='box'></div>
+        <div class='box'></div>
+        <div class='box'></div>
+        <div class='box'></div>
+        <div class='box'></div>
+        <div class='box'></div>
+    </div>
+</body>
+</html>
